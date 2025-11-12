@@ -1,5 +1,5 @@
 # DSC212_Karate_Club_Assignment
-# community deduction in zachry's karate club using spectral modularity
+# Community Detection in Zachary's Karate Club Network Using Spectral Modularity
 ---
 #### ASIF ALI M A
 #### IMS24050
