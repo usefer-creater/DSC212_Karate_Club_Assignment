@@ -47,24 +47,24 @@ Where:
 
 ### Eigenvector-Based Split
 
-1. Compute the leading eigenpair \((\lambda_1, u_1)\) of the modularity matrix \(B\).
+Compute the leading eigenpair \((\lambda_1, u_1)\) of the modularity matrix \(B\).
 
-2. Split nodes based on the sign of \(u_1\):
+Split nodes based on the sign of \(u_1\):
 
-   $$
-   s_i =
-   \begin{cases}
-   +1, & u_{1,i} > 0 \\
-   -1, & u_{1,i} \le 0
-   \end{cases}
-   $$
+$$
+s_i =
+\begin{cases}
++1, & u_{1,i} > 0 \\
+-1, & u_{1,i} \le 0
+\end{cases}
+$$
 
-3. If \(\lambda_1 > 0\), the split increases modularity and is accepted.
+If \(\lambda_1 > 0\), the split increases modularity and is accepted.
 
-4. Recurse on each subgraph until all communities are indivisible.
-
+Recurse on each subgraph until all communities are indivisible.
 
 This approach ensures that every partition maximizes modularity locally.
+
 
 ---
 
