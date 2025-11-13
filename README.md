@@ -6,7 +6,7 @@
 ---
 # Recursive Modularity-Based Community Detection in Zachary's Karate Club Network
 
-## 📘 Project Overview
+##  Project Overview
 This project applies **recursive spectral modularity bisection** to detect communities in the famous **Zachary's Karate Club** social network dataset.  
 The goal is to identify distinct subgroups in the network by repeatedly splitting it using the **leading eigenvector** of the modularity matrix, until no further modularity improvement is possible.
 
@@ -19,7 +19,7 @@ The implementation includes:
 
 ---
 
-## 🧩 Tasks Completed
+##  Tasks Completed
 - Implemented modularity-based spectral bisection algorithm  
 - Added recursive splitting until modularity could not be increased  
 - Visualized community formation at each iteration  
@@ -29,7 +29,7 @@ The implementation includes:
 
 ---
 
-## ⚙️ Algorithm Used: Recursive Spectral Modularity Bisection
+##  Algorithm Used: Recursive Spectral Modularity Bisection
 
 The algorithm uses the **modularity optimization principle** to detect communities.
 
@@ -59,7 +59,7 @@ This approach ensures that every partition maximizes modularity locally.
 
 ---
 
-## 🧠 How the Algorithm Works (Summary)
+##  How the Algorithm Works (Summary)
 - The full network starts as one group.  
 - The modularity matrix \(B\) is calculated for the current group.  
 - The leading eigenvector of \(B\) determines how nodes are split into two subgroups.  
@@ -69,7 +69,7 @@ This approach ensures that every partition maximizes modularity locally.
 
 ---
 
-## 📊 Results
+##  Results
 - The Karate Club network divides into clear communities that match the real-world social split between **Mr. Hi’s group** and **the Officer’s group**.  
 - Nodes **0 (Mr. Hi)** and **33 (Officer)** exhibit the highest centrality values, confirming their leadership roles.  
 - Metric evolution plots show how node influence stabilizes as modularity converges.  
@@ -77,7 +77,7 @@ This approach ensures that every partition maximizes modularity locally.
 
 ---
 
-## 🧮 Metrics Tracked
+##  Metrics Tracked
 For each iteration, the following centrality measures were computed:
 - **Degree centrality:** node connectivity
 - **Betweenness centrality:** node influence on shortest paths
@@ -86,14 +86,14 @@ For each iteration, the following centrality measures were computed:
 
 ---
 
-## 🧭 Conclusion
+##  Conclusion
 The recursive spectral modularity algorithm accurately identified the community structure of the Karate Club network.  
 The results align with the known social split, demonstrating the effectiveness of modularity-based spectral methods for detecting communities in real-world networks.  
 Tracking node centrality evolution also revealed leadership patterns and the stabilization of structural roles as communities formed.
 
 ---
 
-## 🧾 Citation
+##  Citation
 Zachary, W. W. (1977). *An Information Flow Model for Conflict and Fission in Small Groups.*  
 Journal of Anthropological Research, 33(4), 452–473.
 
