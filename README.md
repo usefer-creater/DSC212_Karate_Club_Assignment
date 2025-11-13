@@ -34,26 +34,35 @@ The implementation includes:
 The algorithm uses the **modularity optimization principle** to detect communities.
 
 ### Modularity Matrix
-\[
+$$
 B_{ij} = A_{ij} - \frac{k_i k_j}{2m}
-\]
+$$
+
 Where:
+
 - \(A_{ij}\): adjacency matrix entry (1 if nodes *i* and *j* are connected)
 - \(k_i\): degree of node *i*
 - \(m\): total number of edges
 
+
 ### Eigenvector-Based Split
-1. Compute the leading eigenpair \((\lambda_1, u_1)\) of the modularity matrix \(B\).  
+
+1. Compute the leading eigenpair \((\lambda_1, u_1)\) of the modularity matrix \(B\).
+
 2. Split nodes based on the sign of \(u_1\):
-   \[
-   s_i = 
+
+   $$
+   s_i =
    \begin{cases}
-   +1, & u_{1,i} > 0 \\\\
+   +1, & u_{1,i} > 0 \\
    -1, & u_{1,i} \le 0
    \end{cases}
-   \]
-3. If \(\lambda_1 > 0\), the split increases modularity and is accepted.  
+   $$
+
+3. If \(\lambda_1 > 0\), the split increases modularity and is accepted.
+
 4. Recurse on each subgraph until all communities are indivisible.
+
 
 This approach ensures that every partition maximizes modularity locally.
 
