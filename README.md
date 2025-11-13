@@ -110,7 +110,7 @@ If you use this implementation or parts of it in academic work, please cite the 
 
 ---
 
-## 🧰 Requirements
+##  Requirements
 To run the notebook:
 ```bash
 pip install numpy networkx matplotlib pandas
